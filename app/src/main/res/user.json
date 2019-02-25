@@ -1,0 +1,37 @@
+{"status":true,
+  "message":{
+    "firstName":"Abdulrahman",
+    "middleName":"Ayoola",
+    "lastName":"Abdulkarim",
+    "userName":"abdul",
+    "phoneNo":"07036136076",
+    "email":"olanre12waju@gmail.com",
+    "company":{
+      "name":"Abdulmujib Tester",
+      "description":null,
+      "email":"mujib@test.com",
+      "phoneNo":"08117430553",
+      "url":null,
+      "logo":null,
+      "thankYouMessage":null,
+      "sector":null,
+      "users":null,
+      "locations":null,
+      "currency":null,
+      "isEazyShoppingEnabled":false,
+      "id":9,"userCreated":0,
+      "userModified":0,
+      "companyID":0
+    },
+    "userType":"Merchant",
+    "role":null,
+    "roleID":0,
+    "location":null,
+    "locationID":0,
+    "status":"Active",
+    "id":13,
+    "userCreated":0,
+    "userModified":0,
+    "companyID":9
+  }
+}

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VoguePaySdk</string>
+    <string name="demo_pay_text">Pay with VoguePay</string>
+
+    <string name="accept_card_payments">Accept card payments</string>
+    <string name="accept_account_payments">Accept account payments</string>
+    <string name="email">Email</string>
+    <string name="merchantEmail">Merchant Email</string>
+    <string name="buyerEmail">Buyer Email</string>
+    <string name="sellerEmail">Seller Email</string>
+    <string name="command_api_token">Command Api Token</string>
+    <string name="amount_to_charge_required">Amount to charge (required)</string>
+    <string name="merchant_ref">Merchant ref : (will be returned in json)</string>
+    <string name="start_payment">START PAYMENT</string>
+    <string name="currency_code_e_g_ngn">Currency code e.g. NGN(required)</string>
+    <string name="memo">Description of Item Paid for (required)</string>
+    <string name="response_url">Transaction URL is posted to this Url  (required)</string>
+    <string name="phone_number">Phone  Number of Card Owner (Optional)</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+
+
+</resources>

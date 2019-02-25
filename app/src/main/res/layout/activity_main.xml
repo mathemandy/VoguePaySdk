@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:descendantFocusability="beforeDescendants"
+>
+    <ScrollView android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:padding="30dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+        >
+            <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:text="@string/accept_card_payments"
+                    android:id="@+id/cardPaymentSwitch"
+            />
+
+            <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:enabled="false"
+                    android:text="@string/accept_account_payments"
+                    android:checked="true"
+                    android:id="@+id/accountPaymentSwitch"
+            />
+
+            <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:text="Demo"
+                    android:id="@+id/isDemoSwitch"
+                    android:layout_height="wrap_content"
+            />
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Merchant Id"
+                    android:textSize="14sp"
+                    android:text="8302-0053889"
+                    android:id="@+id/merchant_id"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textShortMessage"
+            />
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/buyerEmail"
+                    android:textSize="14sp"
+                    android:text="andyeshiet@gmail.com"
+                    android:id="@+id/buyerEmail"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textEmailAddress"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/merchantEmail"
+                    android:textSize="14sp"
+                    android:text="vicformidable@gmail.com"
+                    android:id="@+id/merchantEmail"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textEmailAddress"
+            />
+
+         <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/command_api_token"
+                    android:textSize="14sp"
+                    android:id="@+id/comApiToken"
+                    android:singleLine="true"
+                    android:text="3b75Qd2Jjqm8gm9pGBDB3xYhMD3wc"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="text"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/amount_to_charge_required"
+                    android:textSize="14sp"
+                    android:text="10"
+                    android:id="@+id/amountTC"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textEmailAddress"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/merchant_ref"
+                    android:textSize="14sp"
+                    android:id="@+id/merchantRef"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="number"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="NGN"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/currency_code_e_g_ngn"
+                    android:id="@+id/currencyTC"
+            />
+                     <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="I am payinng for Test"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/memo"
+                    android:id="@+id/memoTC"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    android:text="http://f3c45a65.ngrok.io/customers"
+                    android:hint="@string/response_url"
+                    android:id="@+id/responseTC"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="08120088124"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/phone_number"
+                    android:id="@+id/phoneTC"/>
+
+                    <!--Descriptor Information (optional )-->
+                  <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Vogue Pay"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Company (optional)"
+                    android:id="@+id/companyTC"
+            />      <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="City (optional)"
+                    android:id="@+id/cityYC"
+            />      <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Street (optional)"
+                    android:id="@+id/streetTC"
+            />      <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Nigeria"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Country"
+                    android:id="@+id/countryTC"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/first_name"
+                    android:id="@+id/fNameTC"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/last_name"
+                    android:id="@+id/lnameTC"
+            />
+            <Button
+                    style="@style/loginButtonGold"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/start_payment"
+                    android:id="@+id/startPaymentBtn"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

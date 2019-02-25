@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VoguepaySdk</string>
+    <string name="amount">amount</string>
+    <string name="email">EMAIL</string>
+    <string name="expiration">MM/YY</string>
+    <string name="cvc_cvv2">cvv</string>
+    <string name="save_card">Save Card</string>
+    <string name="pay">PAY</string>
+    <string name="choose_saved_card">CHOOSE SAVED CARD</string>
+    <string name="powered_by">by VoguePay</string>
+    <string name="pci_dss_compliant">PCI-DSS COMPLIANT</string>
+    <string name="card_number">Card Number</string>
+</resources>

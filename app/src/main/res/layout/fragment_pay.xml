@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:scrollbars="none">
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+
+                android:layout_marginRight="35dp"
+                android:orientation="vertical">
+
+
+            <EditText
+                    style="@style/placeholder"
+                    android:id="@+id/merchant_id"
+                    android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:hint="merchant ID: default = 'demo'"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            <EditText
+                    style="@style/placeholder"
+                    android:id="@+id/total"
+                    android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                    android:drawablePadding="8dp"
+                    android:hint="Total : amount to be paid"
+                    android:textColorHint="@color/grey"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+
+            <EditText
+                    style="@style/placeholder"
+                    android:id="@+id/memo"
+                    android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                    android:drawablePadding="12dp"
+                    android:hint="memo : what are you paying for "
+                    android:textColorHint="@color/grey"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+
+
+            <EditText
+                    style="@style/placeholder"
+                    android:id="@+id/currency"
+                    android:drawablePadding="22dp"
+                    android:hint="Currency : Optional when not demo"
+                    android:textColorHint="@color/grey"
+                    android:imeOptions="actionNext"
+                    android:visibility="visible"
+                    android:inputType="text"
+                    android:maxLength="15" />
+
+            <EditText
+                    style="@style/placeholder"
+                    android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                    android:drawablePadding="16dp"
+                    android:hint="Enter Password"
+                    android:visibility="gone"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/grey"
+                    android:inputType="text" />
+
+            <EditText
+                    style="@style/placeholder"
+                    android:id="@+id/confirm_password"
+                    android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                    android:drawablePadding="16dp"
+                    android:textColorHint="@color/grey"
+                    android:hint="Confirm Password"
+                    android:imeOptions="actionDone"
+                    android:visibility="gone"
+                    android:inputType="textPassword" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/error"
+                    android:visibility="gone"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:gravity="center_horizontal"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/text_small" />
+
+            <Button
+                    style="@style/loginButtonWhite"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/pay_button"
+                    android:onClick="btnCreateAccountClicked"
+                    android:text="Pay" />
+
+            <Button
+                    style="@style/loginButtonGold"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/pay_button_seamless"
+                    android:onClick="btnCreateAccountClicked"
+                    android:text="Pay" />
+
+            <ProgressBar android:layout_width="50dp"
+                         android:layout_marginTop="8dp"
+                         android:visibility="gone"
+                         android:id="@+id/progress_bar"
+                         android:layout_gravity="center"
+                         android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="payBtnStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/green_btn_curved</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="svdCardsBtnStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/blue_btn_curved</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tabLayoutStyle2" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#607d8b</item>
+    </style>
+
+</resources>
