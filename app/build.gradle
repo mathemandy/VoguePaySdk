@@ -20,6 +20,9 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -32,6 +35,11 @@ android {
     }
     productFlavors {
     }
+    androidExtensions {
+        experimental = true
+    }
+
+
 }
 
 dependencies {

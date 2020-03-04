@@ -1,7 +1,7 @@
 package android.voguepay.ng.voguepaysdk.viewmodel;
 
 import android.voguepay.ng.voguepaysdk.AppController;
-import android.voguepay.ng.voguepaysdk.Ui.payment.Repository;
+import android.voguepay.ng.voguepaysdk.ui.payment.Repository;
 import android.voguepay.ng.voguepaysdk.WhiteLabel;
 import android.voguepay.ng.voguepaysdk.injection.VoguePayComponent;
 import android.voguepay.ng.voguepaysdk2.LabelResponse;

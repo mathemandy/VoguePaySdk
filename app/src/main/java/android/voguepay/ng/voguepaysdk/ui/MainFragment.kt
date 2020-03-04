@@ -1,4 +1,4 @@
-package android.voguepay.ng.voguepaysdk.Ui
+package android.voguepay.ng.voguepaysdk.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.voguepay.ng.voguepaysdk.R
-import android.voguepay.ng.voguepaysdk.Ui.payment.Constants
+import android.voguepay.ng.voguepaysdk.ui.payment.Constants
 import android.voguepay.ng.voguepaysdk.WhiteLabel
 import android.voguepay.ng.voguepaysdk.viewmodel.MainFragmentViewModel
 import android.voguepay.ng.voguepaysdk2.Card

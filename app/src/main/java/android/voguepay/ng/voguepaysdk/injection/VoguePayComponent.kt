@@ -1,6 +1,6 @@
 package android.voguepay.ng.voguepaysdk.injection
 
-import android.voguepay.ng.voguepaysdk.Ui.payment.PaymentViewModel
+import android.voguepay.ng.voguepaysdk.ui.payment.PaymentViewModel
 import android.voguepay.ng.voguepaysdk.viewmodel.MainFragmentViewModel
 import dagger.Component
 

@@ -1,8 +1,8 @@
 package android.voguepay.ng.voguepaysdk.di;
 
 
-import android.voguepay.ng.voguepaysdk.Ui.MainActivity;
-import android.voguepay.ng.voguepaysdk.Ui.MainFragment;
+import android.voguepay.ng.voguepaysdk.ui.MainActivity;
+
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 

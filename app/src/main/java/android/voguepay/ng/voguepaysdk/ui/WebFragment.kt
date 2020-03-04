@@ -1,10 +1,9 @@
-package android.voguepay.ng.voguepaysdk.Ui
+package android.voguepay.ng.voguepaysdk.ui
 
 import android.annotation.TargetApi
 import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -12,12 +11,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.voguepay.ng.voguepaysdk.R
-import android.voguepay.ng.voguepaysdk.Ui.payment.Constants.AUTHURL
+import android.voguepay.ng.voguepaysdk.ui.payment.Constants.AUTHURL
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
-import org.apache.http.util.EncodingUtils
 
 class WebFragment : Fragment() {
 

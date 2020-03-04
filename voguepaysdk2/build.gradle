@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+
 
 android {
     compileSdkVersion 28
@@ -12,6 +15,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         minSdkVersion 19
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -20,11 +24,19 @@ android {
     }
     productFlavors {
     }
+    androidExtensions {
+        experimental = true
+    }
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    api 'androidx.appcompat:appcompat:1.1.0-alpha01'
+    api 'androidx.appcompat:appcompat:1.1.0-rc01'
+    api 'androidx.core:core-ktx:1.0.2'
     api 'com.android.support:multidex:1.0.3'
     api 'com.google.guava:guava:27.0.1-android'
     testApi 'junit:junit:4.12'
@@ -34,7 +46,6 @@ dependencies {
 
     // Support libraries
     api deps.support.app_compat
-    api deps.support.v4
     api deps.support.design
     // RxJava
     api deps.rx_android
@@ -64,7 +75,7 @@ dependencies {
         exclude module: 'appcompat-v7'
         exclude module: 'support-v4'
     }
-    api 'com.google.android.material:material:1.1.0-alpha02'
+    api 'com.google.android.material:material:1.1.0-alpha09'
     implementation 'org.koin:koin-android:1.0.1'
     implementation 'org.koin:koin-androidx-viewmodel:1.0.1'
 }

@@ -1,9 +1,8 @@
-package android.voguepay.ng.voguepaysdk.Ui.payment;
+package android.voguepay.ng.voguepaysdk.ui.payment;
 
-import android.app.Application;
 import android.voguepay.ng.voguepaysdk.AppController;
 import android.voguepay.ng.voguepaysdk.injection.VoguePayComponent;
-import androidx.annotation.NonNull;
+
 import androidx.lifecycle.AndroidViewModel;
 import org.jetbrains.annotations.NotNull;
 

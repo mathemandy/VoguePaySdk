@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#fff</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="otpColorTheme">#dd7a32</color>
+    <color name="pinColorTheme">#dd7a32</color>
+    <color name="tabIndicatorColor">@color/colorPrimary</color>
+    <color name="black">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+
 </resources>

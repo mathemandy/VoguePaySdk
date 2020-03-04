@@ -1,7 +1,7 @@
 package android.voguepay.ng.voguepaysdk.di;
 
 
-import android.voguepay.ng.voguepaysdk.Ui.MainFragment;
+import android.voguepay.ng.voguepaysdk.ui.MainFragment;
 import android.voguepay.ng.voguepaysdk.ViewModelFactory;
 import androidx.lifecycle.ViewModelProvider;
 import dagger.Binds;
