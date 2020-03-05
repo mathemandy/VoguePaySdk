@@ -1,6 +1,6 @@
 package android.voguepay.ng.voguepaysdk.ui.payment;
 
-import android.voguepay.ng.voguepaysdk.AppController;
+import android.voguepay.ng.voguepaysdk.VoguePayApplication;
 import android.voguepay.ng.voguepaysdk.injection.VoguePayComponent;
 
 import androidx.lifecycle.AndroidViewModel;
@@ -15,7 +15,7 @@ public class PaymentViewModel extends AndroidViewModel implements VoguePayCompon
 
     @Inject
     public PaymentViewModel() {
-        super(AppController.getInstance());
+        super(VoguePayApplication.getInstance());
     }
 
 

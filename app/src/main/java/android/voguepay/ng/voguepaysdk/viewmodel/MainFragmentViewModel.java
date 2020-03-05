@@ -1,6 +1,6 @@
 package android.voguepay.ng.voguepaysdk.viewmodel;
 
-import android.voguepay.ng.voguepaysdk.AppController;
+import android.voguepay.ng.voguepaysdk.VoguePayApplication;
 import android.voguepay.ng.voguepaysdk.ui.payment.Repository;
 import android.voguepay.ng.voguepaysdk.WhiteLabel;
 import android.voguepay.ng.voguepaysdk.injection.VoguePayComponent;
@@ -22,7 +22,7 @@ public class MainFragmentViewModel extends AndroidViewModel implements VoguePayC
 
     @Inject
     public MainFragmentViewModel(Repository repository) {
-        super(AppController.getInstance());
+        super(VoguePayApplication.getInstance());
 
         this.mRepository = repository;
     }

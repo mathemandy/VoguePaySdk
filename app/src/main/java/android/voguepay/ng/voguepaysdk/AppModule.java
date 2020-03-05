@@ -31,7 +31,7 @@ public class AppModule {
      @Singleton
      @Provides
      static Context providesContext() {
-         return AppController.getContextInstance();
+         return VoguePayApplication.getContextInstance();
      }
 
 

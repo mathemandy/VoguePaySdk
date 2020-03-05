@@ -2,17 +2,15 @@ package android.voguepay.ng.voguepaysdk.injection;
 
 
 import android.content.Context;
-import android.voguepay.ng.voguepaysdk.AppController;
+import android.voguepay.ng.voguepaysdk.VoguePayApplication;
 import dagger.Module;
 import dagger.Provides;
 
-import javax.inject.Singleton;
-
 @Module
 public class VoguePayModule {
-    private AppController mAppConntroller;
+    private VoguePayApplication mAppConntroller;
 
-    public VoguePayModule(AppController mAppConntroller) {
+    public VoguePayModule(VoguePayApplication mAppConntroller) {
         this.mAppConntroller = mAppConntroller;
     }
 

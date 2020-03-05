@@ -7,7 +7,7 @@
 
 
     <application android:allowBackup="true"
-                 android:name=".AppController"
+                 android:name=".VoguePayApplication"
                  android:label="@string/app_name"
                  tools:replace="android:theme"
                  android:icon="@mipmap/ic_launcher"

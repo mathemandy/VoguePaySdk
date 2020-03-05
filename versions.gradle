@@ -26,7 +26,7 @@ versions.arch_core = "2.0.0"
 versions.room = "2.0.0"
 versions.lifecycle = "2.0.0"
 versions.support = "1.0.0"
-versions.dagger = "2.19"
+versions.dagger = "2.24"
 versions.junit = "4.12"
 versions.espresso = "3.1.0-alpha4"
 versions.retrofit = "2.3.0"
@@ -51,6 +51,7 @@ versions.paging = "2.1.0-alpha01"
 versions.navigation = "1.0.0-alpha06"
 versions.work = "1.0.0-alpha10"
 versions.rxAdapter = "1.0.0"
+versions.timber =  "4.7.1"
 def deps = [:]
 
 
@@ -159,6 +160,11 @@ work.runtime_ktx = "android.arch.work:work-runtime-ktx:$versions.work"
 deps.work = work
 
 
+def utility =  [:]
+utility.timber = "com.jakewharton.timber:timber:$versions.timber"
+deps.utility = utility
+
+
 def navigation = [:]
 navigation.runtime = "android.arch.navigation:navigation-runtime:$versions.navigation"
 navigation.runtime_ktx = "android.arch.navigation:navigation-runtime-ktx:$versions.navigation"
@@ -174,5 +180,7 @@ def addRepos(RepositoryHandler handler) {
     handler.google()
     handler.jcenter()
     handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    handler.maven { url 'https://jitpack.io' }
+
 }
 ext.addRepos = this.&addRepos

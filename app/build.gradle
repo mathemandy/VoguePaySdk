@@ -51,6 +51,7 @@ dependencies {
                 exclude module: 'appcompat-v7'
                 exclude module: 'support-v4'
             }
+    implementation deps.utility.timber
     kapt deps.dagger.compiler
     kapt deps.dagger.android_support_compiler
     kapt deps.room.compiler
@@ -62,5 +63,11 @@ dependencies {
         exclude module: 'support-v4'
     }
 
-    implementation project(':voguepaysdk2')
+//    implementation project(':voguepaysdk2')
+    implementation 'com.github.mathemandy:voguepaysdk:0.1.0'
+    //timber for logging
+    implementation "com.uber.rxdogtag:rxdogtag:0.2.0"
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+
 }

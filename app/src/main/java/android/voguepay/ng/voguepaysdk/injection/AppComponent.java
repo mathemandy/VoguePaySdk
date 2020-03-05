@@ -1,7 +1,7 @@
 package android.voguepay.ng.voguepaysdk.injection;
 
 import android.app.Application;
-import android.voguepay.ng.voguepaysdk.AppController;
+import android.voguepay.ng.voguepaysdk.VoguePayApplication;
 import android.voguepay.ng.voguepaysdk.AppModule;
 import android.voguepay.ng.voguepaysdk.di.ActivityBindingModule;
 import android.voguepay.ng.voguepaysdk.di.NetworkModule;
@@ -17,10 +17,10 @@ import javax.inject.Singleton;
         AndroidSupportInjectionModule.class, NetworkModule.class,
 ActivityBindingModule.class})
 @Singleton
-public interface AppComponent extends AndroidInjector<AppController> {
+public interface AppComponent extends AndroidInjector<VoguePayApplication> {
 
     @Override
-    void inject(AppController instance);
+    void inject(VoguePayApplication instance);
 
     @Component.Builder
     interface Builder{
