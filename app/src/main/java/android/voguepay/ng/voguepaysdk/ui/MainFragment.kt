@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.voguepay.ng.voguepaysdk.R
-import android.voguepay.ng.voguepaysdk.ui.payment.Constants
 import android.voguepay.ng.voguepaysdk.WhiteLabel
+import android.voguepay.ng.voguepaysdk.ui.payment.Constants
 import android.voguepay.ng.voguepaysdk.viewmodel.MainFragmentViewModel
 import android.voguepay.ng.voguepaysdk2.Card
 import android.voguepay.ng.voguepaysdk2.Payment
@@ -28,13 +28,9 @@ import kotlin.experimental.and
 class MainFragment : DaggerFragment(), View.OnClickListener {
 
 
-    @set:Inject
-    var viewModelFactory: ViewModelProvider.Factory? = null
 
-
-    private val  mViewModel by lazy {
-      ViewModelProviders.of(this, viewModelFactory).get(MainFragmentViewModel::class.java)
-    }
+    @Inject
+    lateinit var  mViewModel: MainFragmentViewModel
 
     private lateinit var mPaymentButton: Button
     private lateinit var mPaymentButton2: Button
